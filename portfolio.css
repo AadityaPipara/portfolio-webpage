@@ -86,11 +86,46 @@ main {
     height: auto;
 }
 
-/* Button Container adjustments */
 .btns {
     display: flex;
     gap: 10px;
     margin-top: 20px;
+}
+
+.btn-hire {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    /* background-color: blueviolet; */
+    /* background-color: color-mix(in srgb, purple 50%, blue 50%); */
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-hire:hover {
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #7B4FE8, #4F8FE8) border-box;
+    color: #000000;
+} 
+
+.btn-getcv {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 3px solid transparent;
+    transition: color 0.3s ease-in-out;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #7B4FE8, #4F8FE8) border-box;
+    color: #000000;
+}
+
+.btn-getcv:hover {
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    color: white;
 }
 
 .intro {
@@ -235,4 +270,5 @@ footer {
     .card {
         width: 90%; /* Cards take full width on tiny screens */
     }
+
 }
