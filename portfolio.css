@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.aboutme, .intro, .services, footer {
+    scroll-margin-top: 70px; 
+}
+
+body {
+    background-image: url(https://themewagon.github.io/satner/img/body-bg.png);
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    opacity: 80%;
+    background-color: white;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+    list-style: none;
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-weight:800;
+} 
+
+ul li:hover {
+    color: #000000;
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.05s ease-in-out;
+    transform: scale(1.15);
+}
+
+main {
+    margin-top: 100px;
+}
+
+.aboutme {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.aboutme::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url("./source/logo.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left center;
+    z-index: -1;
+    filter: grayscale(100%);
+    opacity: 0.12;
+}
+
+.hello:after {
+    content: ' ';
+    display:inline-block;
+    vertical-align: middle;
+    height: 2px;
+    width: 300px;
+    margin-left: 12px;
+    background: #000000;
+}
+
+.btns {
+    display: flex;
+    gap: 10px
+}
+
+.btn-hire {
+    -webkit-appearance: none; 
+    appearance: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-hire:hover {
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #7B4FE8, #4F8FE8) border-box;
+    color: #000000;
+}
+
+.btn-getcv {
+    -webkit-appearance: none; 
+    appearance: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 3px solid transparent;
+    transition: color 0.3s ease-in-out;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #7B4FE8, #4F8FE8) border-box;
+    color: #000000;
+}
+
+.btn-getcv:hover {
+    background: linear-gradient(to right, #7B4FE8, #4F8FE8);
+    color: white;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.intro-img {
+    max-width: 445px;
+    height: 432.078px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Rubik", sans-serif;
+    width: 400px;
+    height: 600px;
+}
+
+.intro-h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.intro-p {
+    font-size: 18px;
+    color: gray;
+}
+
+.services {
+    margin-top: 100px;
+}
+
+.service-h1 {
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-p {
+    text-align: center;
+    font-size: 19px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.service-card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 285px;
+    height: 346px;
+    background-color: #f9f9fd;
+    border-radius: 5%;
+    font-family: 'Roboto', sans-serif;
+    padding: 45px 40px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    transition: all 0.15s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.card img{
+    margin-top: 30px;
+}
+
+.card h4{
+    margin-top: 30px;
+}
+
+.card p{
+    color: gray;
+}
+
+footer{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-top: 1px solid #000;
+    border-top-width: 50%;
+    padding-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-h4{
+    font-size: 18px;
+}
+
+a{
+    color: dodgerblue;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: 0;
+    font-size: 16px;
+    transition: all 0.05s ease-in-out;
+}
+
+.social a:hover{
+    color: blueviolet;
+    text-decoration: underline; 
+    font-size: 18px;
+}
+
+.footer-p{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .logo { width: 100px; margin-left: 10px; }
+    ul { margin-right: 10px; gap: 10px; font-size: 11px; }
+
+    .aboutme { flex-direction: column; text-align: center; }
+    .aboutme::before { background-size: 80%; } /* Keeping Satner background */
+    .hello:after { width: 40px; }
+    .btns { justify-content: center; margin-bottom: 20px; }
+    .home-img { width: 80%; height: auto; }
+
+    .intro { flex-direction: column; align-items: center; text-align: center; }
+    .intro-img { width: 80%; height: auto; }
+    .intro-img img { width: 100%; }
+    .intro-text { width: 90%; height: auto; align-items: center; }
+    .intro-h2 { margin-top: 20px; }
+
+    .service-card { flex-direction: column; align-items: center; }
+    .card { width: 90%; height: auto; }
+}
